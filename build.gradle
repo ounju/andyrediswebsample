@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'war'
+
+
+description = 'redis client web sample'
+    group = 'sre'
+repositories {
+    jcenter()
+}
+
+dependencies {
+    providedCompile 'javax:javaee-web-api:7.0'
+    
+    testCompile     'junit:junit:4.12'
+}
